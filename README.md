@@ -339,3 +339,11 @@ fn main() {
     println!("The value of x is: {}", x);
 }
 ```
+
+### 주석
+- 일반적인 주석과 같음
+```
+fn main() {
+// Hello, world.
+}
+```
