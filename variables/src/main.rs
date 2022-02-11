@@ -1,11 +1,7 @@
-const MAX_POINTS: u32 = 100_000;
-
 fn main() {
-    
-    let mut x = 5;
-    println!("The vale of x is: {}", x);
-    x = 6;
-    println!("The vale of x is: {}", x);
-
-    println!("The const of {}", MAX_POINTS)
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let first = tup.0;
+    let second = tup.1;
+    let third = tup.2;
+    println!("{} {} {}", first, second, third);
 }
