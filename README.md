@@ -347,3 +347,51 @@ fn main() {
 // Hello, world.
 }
 ```
+
+### 제어문
+
+#### if 표힌식
+- 일반적인 if 문이랑 형식 같음
+- let구문에서 if 사용하기
+    - if는 표현식 let 구문 우측에 사용 가능
+    - 이것도 좀 신박하네..
+```
+fn main() {
+    let condition = true;
+    let number = if condition {
+        5
+    } else {
+        6
+    };
+
+    println!("The value of number is: {}", number);    
+}
+```
+
+#### 반복문과 반복
+- loop
+    - 조건 없는 무한 반복
+- while
+    - 조건 있는 반복
+- for
+    - for-each문 컬렉션 반복
+
+
+```
+fn main() {
+    let a = [10, 20, 30, 40, 50];
+
+    for element in a.iter() {
+        println!("the value is: {}", element);
+    }
+}
+```
+
+```
+fn main() {
+    for number in (1..4).rev() {
+        println!("{}!", number);
+    }
+    println!("LIFTOFF!!!");
+}
+```

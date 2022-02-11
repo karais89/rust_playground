@@ -1,8 +1,7 @@
-fn five() -> i32 {
-    5
-}
-
 fn main() {
-    let x = five();
-    println!("The value of x is: {}", x);
+    let a = [10, 20, 30, 40, 50];
+
+    for element in a {
+        println!("the value is: {}", element);
+    }
 }
